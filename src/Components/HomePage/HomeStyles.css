@@ -1,0 +1,87 @@
+.container-home{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.container-home .row{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-home .image-home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw; 
+    object-fit: cover;
+    overflow: hidden;
+    margin-top: 10vh;
+}
+
+.container-home .image-home img{
+    width: 20vw;
+    border-radius: 30% 70% 51% 49% / 30% 48% 52% 70%;
+    border: 1.5px solid var(--color-primary);
+}
+.container-home .text-home{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3vh;
+}
+.container-home .text-home h1{
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--color-primary);
+    margin: 0;
+}
+.container-home .text-home h2{
+    font-weight: 300;
+    font-size: 2rem;
+    margin: 0;
+    color: var(--color-quarter);
+}
+.container-home .text-home p{
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: var(--color-quarter);
+    margin: 0;
+    text-align: center;
+}
+
+
+
+.container-home .redes-home{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    margin-top: 5vh;
+    height: auto;
+}
+
+.container-home .redes-home a{
+    display: flex;
+    align-items: center;
+    width: 2.5rem;
+    margin: 0 1rem;
+
+    padding: 10px
+}
+.container-home .redes-home a svg {
+    width: 2.5rem;
+    height: 2.5rem;
+    color: var(--color-quarter);
+}
+.container-home .redes-home a :hover{
+    color: var(--color-primary);
+}

@@ -1,0 +1,126 @@
+.container-about{
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-about div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+
+.container-about div div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    text-align: justify;
+}
+
+.container-about div div div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    text-align: justify;
+}
+
+.container-about div div div h3{
+    padding-top: 3rem;
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--color-primary);
+    margin: 0;
+    border-bottom: .5px solid var(--color-primary);
+}
+.container-about div div div strong{
+    font-weight: 600;
+}
+
+.container-about div div div p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: var(--color-primary);
+    width: 65%;
+    text-align: justify;
+}
+
+.container-about div div div h4{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--color-quarter);
+    margin: 0;
+    border-bottom: .5px solid var(--color-terciary);
+}
+
+.container-about div div div ul{
+    display: grid; 
+    grid-template-rows: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0px;
+    width: 65%;
+    text-align: justify;
+    text-decoration: none;
+    list-style: none;
+}
+.container-about div div div ul li{
+    display: flex;
+    flex-direction: column;
+    width: 4rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-about div div div ul li svg{
+    width: 2rem;
+    height: 2rem;
+    color: var(--color-quarter);
+}
+.container-about div .caracteristicas-about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    text-align: justify;
+    margin-top: 3rem;
+}
+.container-about div .caracteristicas-about .card-caracteristica{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: justify;
+    margin: 2rem 0;
+} 
+
+.container-about div .caracteristicas-about .card-caracteristica h5{
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: -1px;
+    margin: 0;
+    border-bottom: .5px solid var(--color-terciary);
+    color: var(--color-quarter);
+}
+
+.container-about div .caracteristicas-about .card-caracteristica .imagen-caracteristica img{
+ width: 100%;
+}
+
+.container-about div .caracteristicas-about .card-caracteristica .imagen-caracteristica{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 25%;
+    object-fit: contain;
+}

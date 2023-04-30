@@ -1,3 +1,70 @@
-.contact-page{
-    height: 100vh;
+.contact-page {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    min-height: 90vh;
+}
+
+.contact-page .container-fluid {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-page .container-fluid .contact-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+
+.contact-page .container-fluid .contact-text h3 {
+    font-size: 2.8rem;
+    font-weight: 200;
+    margin: 0;
+}
+
+.contact-page .container-fluid .contact-text p {
+    font-size: 1.2rem;
+    font-weight: 200;
+    margin: 0;
+}
+
+.contact-page .container-fluid .contact-cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    grid-template-rows: .5fr 1.5fr;
+}
+
+.contact-page .container-fluid .contact-cards .container-superior{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.contact-page .container-fluid .contact-cards .container-superior .contact-card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-page .container-fluid .contact-cards .container-superior .contact-card .contact-card-icon {
+    background-color: var(--color-secondary);
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    border-radius: 50%;
+}
+.contact-page .container-fluid .contact-cards .container-superior .contact-card .contact-card-icon svg{
+    color: var( --color-primary);
+    width: 2rem;
+    height: 2rem;
 }

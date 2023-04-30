@@ -1,7 +1,10 @@
+import { Container } from "react-bootstrap"
 
 
 export const ContactPage = () => {
   return (
-    <div>ContactPage</div>
+    <section className="contact-page">
+      <Container fluid className="contact-page-container">
+    </section>
   )
 }

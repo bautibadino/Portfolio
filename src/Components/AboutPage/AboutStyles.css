@@ -28,7 +28,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     width: 100%;
     text-align: justify;
 }
@@ -51,6 +51,10 @@
     color: var(--color-primary);
     width: 65%;
     text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .container-about div div div h4{
@@ -101,7 +105,16 @@
     justify-content: center;
     width: 100%;
     text-align: justify;
-    margin: 2rem 0;
+    margin: 1rem 0;
+    padding:.5rem;
+    /* GLASS */
+    background: rgba(33, 56, 45, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.9px);
+    -webkit-backdrop-filter: blur(2.9px);
+    border: 1px solid rgba(109, 157, 134, 0.12);
+    /* GLASS */
 } 
 
 .container-about div .caracteristicas-about .card-caracteristica h5{
@@ -115,6 +128,7 @@
 
 .container-about div .caracteristicas-about .card-caracteristica .imagen-caracteristica img{
  width: 100%;
+ padding-left: 10px;
 }
 
 .container-about div .caracteristicas-about .card-caracteristica .imagen-caracteristica{

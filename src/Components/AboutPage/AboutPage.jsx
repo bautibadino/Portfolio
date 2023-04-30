@@ -6,8 +6,9 @@ import {
   FaCss3Alt,
   FaReact,
   FaGithub,
+  FaNode,
 } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io5";
+import { IoLogoFirebase, IoLogoJavascript } from "react-icons/io5";
 import { Parallax } from "react-scroll-parallax";
 
 
@@ -16,8 +17,10 @@ export const AboutPage = () => {
   return (
     <Container fluid id="SobreMi" className='container-about'>
       <div>
-        <Parallax translateX={[-35, 20]} opacity={[-20 , 100]}>
-          <div className="texto-about">
+        <Parallax 
+        translateX={[-35, 10]}
+        >
+          <div className="texto-about ">
             <h3>
               Hola, soy <strong>Bautista</strong>
             </h3>
@@ -58,11 +61,28 @@ export const AboutPage = () => {
                   Git <FaGithub />{" "}
                 </p>
               </li>
+              <li>
+                <p>
+                  node <FaNode />
+                </p>
+              </li>
+              <li>
+                <p>
+                  Firebase <IoLogoFirebase />{" "}
+                </p>
+              </li>
             </ul>
           </div>
         </Parallax>
-        <Parallax className="caracteristicas-about" translateX={[30,-20]} opacity={[[-20 ,100]]}>
-          <div className="card-caracteristica">
+        <Parallax
+        translateX={[10, -35]} 
+        className="caracteristicas-about" >
+          <Parallax
+          translateX={['60px', '0px']}
+
+          easing="easeInQuad"
+          className="card-caracteristica"
+          >
             <div className="imagen-caracteristica">
               <img src={"src/images/idea.svg"} />
             </div>
@@ -72,8 +92,12 @@ export const AboutPage = () => {
               Me destaco por mi habilidad para identificar y resolver problemas de manera efectiva, mediante el análisis crítico y la toma de decisiones consciente.
               </p>
             </div>
-          </div>
-          <div className="card-caracteristica">
+          </Parallax>
+          <Parallax 
+          className="card-caracteristica"
+          translateX={['50px', '0px']}
+          easing="easeInQuad"
+          >
             <div className="imagen-caracteristica">
               <img src={"src/images/talk.svg"} />
             </div>
@@ -83,8 +107,13 @@ export const AboutPage = () => {
               Mi habilidad para comunicarme con claridad y eficacia me permite establecer relaciones interpersonales efectivas y lograr objetivos de manera colaborativa.
               </p>
             </div>
-          </div>
-          <div className="card-caracteristica">
+          </Parallax>
+          <Parallax
+          className="card-caracteristica"
+          translateX={['60px', '0px']}
+          easing="easeInQuad"
+          speed={0.6}
+          >
             <div className="imagen-caracteristica">
               <img src={"src/images/Online report_Flatline.svg"} alt="" />
             </div>
@@ -95,7 +124,7 @@ export const AboutPage = () => {
                 y mi disposición a enfrentar nuevos desafíos.
               </p>
             </div>
-          </div>
+          </Parallax>
         </Parallax>
       </div>
     </Container>

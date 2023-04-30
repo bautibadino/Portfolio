@@ -1,6 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
 import { Layout } from "./Layout/Layout";
-import { RouterApp } from "./Components/Router/RouterApp";
 import "animate.css";
 import { Provider } from "./Context/Provider";
 import { HomePage } from "./Components/HomePage/HomePage";

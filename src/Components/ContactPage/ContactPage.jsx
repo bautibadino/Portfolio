@@ -48,7 +48,6 @@ export const ContactPage = () => {
               <h5>¿donde encontrarme?</h5>
             </Container>
             <Container className="contact-card-text">
-                <GoogleApiWrapper/>
             </Container>
           </Container>
         </Container>

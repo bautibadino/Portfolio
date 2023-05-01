@@ -194,7 +194,6 @@ backdrop-filter: blur(8px);
     border: none;
     padding: 0;
     margin: 0;
-
 }
 .carrousel .contenedor-flecha-der button:active{
     scale: 0.95;

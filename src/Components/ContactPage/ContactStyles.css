@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     min-height: 90vh;
+    padding-top: 25px;
 }
 
 .contact-page .container-fluid {
@@ -24,12 +25,14 @@
     font-size: 2.8rem;
     font-weight: 200;
     margin: 0;
+    color: var(--color-quarter);
 }
 
 .contact-page .container-fluid .contact-text p {
     font-size: 1.2rem;
     font-weight: 200;
     margin: 0;
+    color: var(--color-quarter);
 }
 
 .contact-page .container-fluid .contact-cards {
@@ -38,23 +41,40 @@
     grid-template-columns: 1fr;
     grid-gap: 20px;
     grid-template-rows: .5fr 1.5fr;
+    border: 1px solid black;
+    align-items: center;
+    justify-items: center;
 }
 
 .contact-page .container-fluid .contact-cards .container-superior{
-    width: 100%;
+    width: 80%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
-}
 
-.contact-page .container-fluid .contact-cards .container-superior .contact-card{
+}
+.contact-page .container-fluid .contact-cards .container-superior a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-page .container-fluid .contact-cards .container-superior a .contact-card{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    background-color: #6d9d8608;
+    padding: 20px;
+    border-radius: 3px;
+    width: 100%;
 }
 
-.contact-page .container-fluid .contact-cards .container-superior .contact-card .contact-card-icon {
+.contact-page .container-fluid .contact-cards .container-superior a .contact-card:hover{
+    background-color: #6d9d8653;
+}
+
+.contact-page .container-fluid .contact-cards .container-superior a .contact-card .contact-card-icon {
     background-color: var(--color-secondary);
     width: 4rem;
     display: flex;
@@ -63,8 +83,41 @@
     height: 4rem;
     border-radius: 50%;
 }
-.contact-page .container-fluid .contact-cards .container-superior .contact-card .contact-card-icon svg{
+.contact-page .container-fluid .contact-cards .container-superior a .contact-card .contact-card-icon svg{
     color: var( --color-primary);
     width: 2rem;
     height: 2rem;
 }
+
+
+.contact-page .container-fluid .contact-cards .container-superior a .contact-card .contact-card-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.contact-page .container-fluid .contact-cards .container-superior a .contact-card .contact-card-text h5{
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: 0;
+    color: var(--color-quarter);
+}
+
+.contact-page .container-fluid .contact-cards .container-superior a .contact-card .contact-card-text a{
+    font-size: 1rem;
+    font-weight: 100;
+    margin: 0;
+    color: var(--color-fifth);
+}
+
+
+.contact-page .container-fluid .contact-cards .container-inferior{
+    min-height: 45vh;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} 

@@ -85,16 +85,23 @@ backdrop-filter: blur(8px);
     overflow: hidden;
     align-items: center;
     justify-content: center;
+
 }
 .carrousel .card-carrousel .card-carrousel-img{
     position: relative;
-    width: 90%
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .carrousel .card-carrousel .card-carrousel-img img{
-    width: 100%;
-    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 90%;
     opacity: 50%;
-    border-radius: 6px;
+    border-radius: 10%;
     transition: opacity 0.3s ease-in-out;
     position: relative;
 }

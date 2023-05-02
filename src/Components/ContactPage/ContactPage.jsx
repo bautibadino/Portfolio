@@ -4,7 +4,6 @@ import { ImLocation } from "react-icons/im";
 import { BsMailbox, BsPhone} from "react-icons/bs";
 import { Link } from "react-router-dom";
 
-import { GoogleApiWrapper } from "google-maps-react";
 export const ContactPage = () => {
   return (
     <section className="contact-page">

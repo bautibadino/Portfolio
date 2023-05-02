@@ -1,33 +1,49 @@
-
 import { Button, Container } from 'react-bootstrap';
-import {BsArrowBarRight, BsFillArrowLeftSquareFill, BsFillArrowRightSquareFill} from 'react-icons/bs'
-export default function Carrousel () {
+import Carousel from "nuka-carousel"
+import {BsArrowBarRight} from 'react-icons/bs'
+export default function Carrousel  (){
+    const slides = [
+        {
+            img: 'src/images/Vite + React_files/pexels-pok-rie-130879.jpg',
+            title: 'NOMBRE PROY1',
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, autem!'
+        },
+        {
+            img: 'src/images/Vite + React_files/pexels-pok-rie-130879.jpg',
+            title: 'NOMBRE PROY2',
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, autem!'
+        },
+        {
+            img: 'src/images/Vite + React_files/pexels-pok-rie-130879.jpg',
+            title: 'NOMBRE PROY3',
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, autem!'
+        },
+    ]
 
+    const props = {
+        autoplay: true,
+    }
   return (
-    <Container className="carrousel">
-        <Container className='contenedor-flecha-izq'>
-            <Button onClick={() => console.log('izq')} className='flecha-izquierda'>
-                <BsFillArrowLeftSquareFill/>
-        </Button >
-        </Container>
-
-        <Container className='card-carrousel'>
-            
+    <Carousel props={props} className="carrousel">
+        {
+        slides.map((slide, index) => {
+            const {title, img, text} = slide;
+        return(
+        <Container className='card-carrousel' key={index} >
             <Container className='card-carrousel-text'>
-                <h4>NOMBRE PROYECT0</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <Button variant="outline-light">ver mas <BsArrowBarRight/> </Button>
+                <h4>{title}</h4>
+                <p>
+                    {text}
+                </p>
+                <Button variant="outline-light">ver mas  <BsArrowBarRight/></Button>
             </Container>
             <Container className='card-carrousel-img'>
-            <img src='src/images/Vite + React_files/pexels-pok-rie-130879.jpg'/>
+            <img src={img}/>
             </Container>
         </Container>   
-        <Container className='contenedor-flecha-der'>
-            <Button onClick={() => console.log('derecha')} className='flecha-derecha'>
-                <BsFillArrowRightSquareFill/>
-            </Button>
-        </Container>    
-        </Container>
+        )}
+        )}
+        </Carousel>
   );
 }
 

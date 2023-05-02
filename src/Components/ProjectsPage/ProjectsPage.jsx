@@ -4,6 +4,24 @@ import { Parallax } from "react-scroll-parallax";
 import Carrousel from "./Carrousel";
 
 export const ProjectsPage = () => {
+  const projects = [
+    {
+      name: "Proyecto 1",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, repudiandae!",
+      url: "src/images/Vite + React_files/pexels-pok-rie-130879.jpg",
+    },
+    {
+      name: "Proyecto 2",
+      description: "Lorem ipsum dolor sit amet consectetur adipi",
+      url: "src/images/Vite + React_files/pexels-pok-rie-130879.jpg",
+    },
+    {
+      name: "Proyecto 3",
+      description: "Lorem ipsum ASDASDASDASDASD sit amet consectetur adipi",
+      url: "src/images/Vite + React_files/pexels-pok-rie-130879.jpg",
+    }
+
+  ]
   return (
     <section className="projects" id="projects">
       <h1>Projects</h1>
@@ -21,7 +39,7 @@ export const ProjectsPage = () => {
           <Parallax speed={130}>
             <img src="src/images/Cohete.svg" alt="" />
           </Parallax>
-          <Parallax speed={-5}>
+          <Parallax speed={35}>
             <img src="src/images/Cohete.svg" alt="" />
           </Parallax>
           <Parallax speed={100}>
@@ -30,12 +48,12 @@ export const ProjectsPage = () => {
           <Parallax speed={-30}>
             <img src="src/images/Cohete.svg" alt="" />
           </Parallax>
-          <Parallax speed={0}>
+          <Parallax speed={94}>
             <img src="src/images/Cohete.svg" alt="" />
           </Parallax>
         </Container>
         <Container fluid className="container-projects">
-          <Carrousel />
+          <Carrousel slides={projects}/>
         </Container>
       </Container>
     </section>

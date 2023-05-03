@@ -1,8 +1,16 @@
 
-import { NavLink } from 'react-router-dom'
+import { useEffect, useState } from 'react'
 import './LayoutStyles.css'
+import { Container, Nav, NavDropdown, NavLink } from 'react-bootstrap'
 export const Navbar = () => {
-  return (
+    const [size, setSize] = useState(0)
+
+    useEffect(() => {
+        setSize(window.innerWidth)
+        console.log(size);
+    }, [])
+
+    return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div>
             <h3>
@@ -34,5 +42,7 @@ export const Navbar = () => {
             </ul>
         </div>
     </nav>
+
+    
   )
 }

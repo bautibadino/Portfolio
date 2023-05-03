@@ -4,10 +4,11 @@ nav{
     align-items: center;
     flex-wrap: wrap ;
     flex-direction: row;
-    width: 100%;
+    width: 100vw;
     background-color: var(--color-primary);
     border-radius: 3px;
-    
+    position: absolute;
+    top: 0;
 }
 nav div{
     width: 20%;

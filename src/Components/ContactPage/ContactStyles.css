@@ -41,7 +41,7 @@
     grid-template-columns: 1fr;
     grid-gap: 20px;
     grid-template-rows: .5fr 1.5fr;
-    border: 1px solid black;
+
     align-items: center;
     justify-items: center;
 }

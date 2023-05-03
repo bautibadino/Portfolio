@@ -1,7 +1,7 @@
-import { createContext, useContext, useEffect, useState } from 'react';
+import { createContext, useEffect, useState } from 'react';
 import { getDownloadURL, ref } from 'firebase/storage';
 import { storage } from '../Components/Firebase/FirebaseConfig';
-import { Context } from './Context';
+
 
 // Crear el contexto
 export const ImageUrlsContext = createContext();
@@ -14,6 +14,7 @@ export const Provider = ({ children }) => {
   async function getImageUrls() {
     // Create an object of references to the image files
     const references = {
+      perfil: ref(storage,  'Imagenes/60AC3452-9745-4202-93CA-744E75AB598F_1_105_c.jpg'),
       cohete: ref(storage, "Imagenes/Cohete.svg"),
       proactivo: ref(storage, "Imagenes/Online report_Flatline.svg"),
       talk: ref(storage, "Imagenes/talk.svg"),

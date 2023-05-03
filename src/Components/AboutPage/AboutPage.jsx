@@ -10,7 +10,7 @@ import {
 } from "react-icons/fa";
 import { IoLogoFirebase, IoLogoJavascript } from "react-icons/io5";
 import { Parallax } from "react-scroll-parallax";
-
+import {TalkImage} from "../Firebase/FirebaseConfig/TalkImage"
 
 export const AboutPage = () => {
 
@@ -99,7 +99,7 @@ export const AboutPage = () => {
           easing="easeInQuad"
           >
             <div className="imagen-caracteristica">
-              <img src={"src/images/talk.svg"} />
+              <img src={<TalkImage/>} />
             </div>
             <div>
               <h5>Buena comunicacion</h5>

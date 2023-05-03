@@ -1,6 +1,7 @@
 import { Button, Container } from 'react-bootstrap';
 import Carousel from "nuka-carousel"
-import {BsArrowBarRight} from 'react-icons/bs'
+import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
+import RocketImage from '../Firebase/FirebaseConfig';
 export default function Carrousel  (){
     const slides = [
         {
@@ -19,12 +20,21 @@ export default function Carrousel  (){
             text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, autem!'
         },
     ]
-
+    console.log();
     const props = {
-        autoplay: true,
+        defaultControlsConfig: {
+            nextButtonText: <AiOutlineArrowRight/>,
+            prevButtonText: <AiOutlineArrowLeft/>,
+            pagingDotsStyle: {
+                fill: 'white',
+                margin: '0 5px',
+            },
+            prevButtonClassName: 'boton-izq',
+            nextButtonClassName: 'boton-der',
+        }
     }
   return (
-    <Carousel props={props} className="carrousel">
+    <Carousel defaultControlsConfig={props.defaultControlsConfig} props={props} className="carrousel">
         {
         slides.map((slide, index) => {
             const {title, img, text} = slide;
@@ -35,7 +45,7 @@ export default function Carrousel  (){
                 <p>
                     {text}
                 </p>
-                <Button variant="outline-light">ver mas  <BsArrowBarRight/></Button>
+                <Button variant="outline-light">ver mas<AiOutlineArrowRight className='flecha-ver-mas'/></Button>
             </Container>
             <Container className='card-carrousel-img'>
             <img src={img}/>

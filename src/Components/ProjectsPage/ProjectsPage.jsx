@@ -2,6 +2,7 @@ import { Container } from "react-bootstrap";
 import "./ProjectsStyles.css";
 import { Parallax } from "react-scroll-parallax";
 import Carrousel from "./Carrousel";
+import RocketImage from "../Firebase/FirebaseConfig";
 
 export const ProjectsPage = () => {
   const projects = [
@@ -27,29 +28,29 @@ export const ProjectsPage = () => {
       <h1>Projects</h1>
       <Container fluid>
         <Container className="cohetes">
-          <Parallax speed={5}>
-            <img src="src/images/Cohete.svg" alt="" />
+          <Parallax speed={28}>
+          <RocketImage/>
           </Parallax>
-          <Parallax speed={-25}>
-            <img src="src/images/Cohete.svg" alt="" />
+          <Parallax speed={15}>
+          <RocketImage/>
           </Parallax>
           <Parallax speed={22}>
-            <img src="src/images/Cohete.svg" alt="" />
+          <RocketImage/>
           </Parallax>
           <Parallax speed={130}>
-            <img src="src/images/Cohete.svg" alt="" />
+          <RocketImage/>
           </Parallax>
           <Parallax speed={35}>
-            <img src="src/images/Cohete.svg" alt="" />
+          <RocketImage/>
           </Parallax>
           <Parallax speed={100}>
-            <img src="src/images/Cohete.svg" alt="" />
+          <RocketImage/>
           </Parallax>
-          <Parallax speed={-30}>
-            <img src="src/images/Cohete.svg" alt="" />
+          <Parallax speed={20}>
+          <RocketImage/>
           </Parallax>
           <Parallax speed={94}>
-            <img src="src/images/Cohete.svg" alt="" />
+          <RocketImage/>
           </Parallax>
         </Container>
         <Container fluid className="container-projects">

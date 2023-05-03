@@ -1,21 +1,27 @@
 import { Button, Container } from 'react-bootstrap';
 import Carousel from "nuka-carousel"
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
-import RocketImage from '../Firebase/FirebaseConfig';
+import { useContext } from 'react';
+import { ImageUrlsContext } from '../../Context/Provider';
+
 export default function Carrousel  (){
+
+    const {imageUrls} = useContext(ImageUrlsContext);
+
+
     const slides = [
         {
-            img: 'src/images/Vite + React_files/pexels-pok-rie-130879.jpg',
+            img: imageUrls.fondo,
             title: 'NOMBRE PROY1',
             text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, autem!'
         },
         {
-            img: 'src/images/Vite + React_files/pexels-pok-rie-130879.jpg',
+            img: imageUrls.fondo,
             title: 'NOMBRE PROY2',
             text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, autem!'
         },
         {
-            img: 'src/images/Vite + React_files/pexels-pok-rie-130879.jpg',
+            img: imageUrls.fondo,
             title: 'NOMBRE PROY3',
             text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, autem!'
         },

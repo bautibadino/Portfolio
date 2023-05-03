@@ -10,9 +10,12 @@ import {
 } from "react-icons/fa";
 import { IoLogoFirebase, IoLogoJavascript } from "react-icons/io5";
 import { Parallax } from "react-scroll-parallax";
-import {TalkImage} from "../Firebase/FirebaseConfig/TalkImage"
+import { useContext } from "react";
+import { ImageUrlsContext } from "../../Context/Provider";
+
 
 export const AboutPage = () => {
+  const {imageUrls} = useContext(ImageUrlsContext);
 
   return (
     <Container fluid id="SobreMi" className='container-about'>
@@ -84,7 +87,7 @@ export const AboutPage = () => {
           className="card-caracteristica"
           >
             <div className="imagen-caracteristica">
-              <img src={"src/images/idea.svg"} />
+              <img src={imageUrls.idea} />
             </div>
             <div>
               <h5>Habilidad para resolver problemas</h5>
@@ -99,7 +102,7 @@ export const AboutPage = () => {
           easing="easeInQuad"
           >
             <div className="imagen-caracteristica">
-              <img src={<TalkImage/>} />
+              <img src={imageUrls.talk} />
             </div>
             <div>
               <h5>Buena comunicacion</h5>
@@ -115,7 +118,7 @@ export const AboutPage = () => {
           speed={0.6}
           >
             <div className="imagen-caracteristica">
-              <img src={"src/images/Online report_Flatline.svg"} alt="" />
+              <img src={imageUrls.proactivo} alt="" />
             </div>
             <div>
               <h5>Proactivo y comprometido</h5>

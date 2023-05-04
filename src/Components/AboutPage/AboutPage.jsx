@@ -20,7 +20,7 @@ export const AboutPage = () => {
     <Container fluid id="SobreMi" className="container-about">
       <div>
         <Parallax 
-        opacity={[ 1, 0.3]}
+        opacity={[ 1.5, 0.1]}
         translateX={[-35, 10]}>
           <div className="texto-about ">
             <h3>
@@ -79,7 +79,7 @@ export const AboutPage = () => {
           </div>
         </Parallax>
         <Parallax 
-        opacity={[1, 0.3]}
+        opacity={[1.5, 0.1]}
         translateX={[10, -35]} 
         className="caracteristicas-about">
           <Parallax easing="easeInQuad" className="card-caracteristica">

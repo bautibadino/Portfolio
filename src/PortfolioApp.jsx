@@ -9,30 +9,21 @@ import { AboutPage } from "./Components/AboutPage/AboutPage";
 import { HomePage } from "./Components/HomePage/HomePage";
 import { Spinner } from "react-bootstrap";
 import { useContext, useEffect, useState } from "react";
+
 export const PortfolioApp = () => {
-  const { imageUrls, loading } = useContext(ImageUrlsContext);
-  if (loading) {
     return (
-      <div>
-        Cargando...
-        <Layout />
-      </div>
+      <BrowserRouter>
+        <Provider>
+          <ParallaxProvider>
+            <Layout />
+            <main>
+              <HomePage />
+              <AboutPage />
+              <ProjectsPage />
+              <ContactPage />
+            </main>
+          </ParallaxProvider>
+        </Provider>
+      </BrowserRouter>
     );
   }
-  return (
-    <BrowserRouter>
-      <Provider>
-        <ParallaxProvider>
-          <Layout />
-          <main>
-            <HomePage />
-            <AboutPage />
-            <ProjectsPage />
-            <ContactPage />
-          </main>
-        </ParallaxProvider>
-      </Provider>
-    </BrowserRouter>
-  );
-};
-

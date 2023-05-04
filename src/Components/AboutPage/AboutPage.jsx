@@ -13,22 +13,23 @@ import { Parallax } from "react-scroll-parallax";
 import { useContext } from "react";
 import { ImageUrlsContext } from "../../Context/Provider";
 
-
 export const AboutPage = () => {
-  const {imageUrls} = useContext(ImageUrlsContext);
+  const { imageUrls } = useContext(ImageUrlsContext);
 
   return (
-    <Container fluid id="SobreMi" className='container-about'>
+    <Container fluid id="SobreMi" className="container-about">
       <div>
         <Parallax 
-        translateX={[-35, 10]}
-        >
+        opacity={[ 1, 0.3]}
+        translateX={[-35, 10]}>
           <div className="texto-about ">
             <h3>
               Hola, soy <strong>Bautista</strong>
             </h3>
             <p>
-              soy un desarrollador Front-End en busca de salir de mi zona de confort y enfrentar desafios que me permitan crecer como profesional.
+              soy un desarrollador Front-End en busca de salir de mi zona de
+              confort y enfrentar desafios que me permitan crecer como
+              profesional.
             </p>
           </div>
           <div>
@@ -77,45 +78,40 @@ export const AboutPage = () => {
             </ul>
           </div>
         </Parallax>
-        <Parallax
+        <Parallax 
+        opacity={[1, 0.3]}
         translateX={[10, -35]} 
-        className="caracteristicas-about" >
-          <Parallax
-          translateX={['60px', '0px']}
-
-          easing="easeInQuad"
-          className="card-caracteristica"
-          >
+        className="caracteristicas-about">
+          <Parallax easing="easeInQuad" className="card-caracteristica">
             <div className="imagen-caracteristica">
               <img src={imageUrls.idea} />
             </div>
             <div>
               <h5>Habilidad para resolver problemas</h5>
               <p>
-              Me destaco por mi habilidad para identificar y resolver problemas de manera efectiva, mediante el análisis crítico y la toma de decisiones consciente.
+                Me destaco por mi habilidad para identificar y resolver
+                problemas de manera efectiva, mediante el análisis crítico y la
+                toma de decisiones consciente.
               </p>
             </div>
           </Parallax>
-          <Parallax 
-          className="card-caracteristica"
-          translateX={['50px', '0px']}
-          easing="easeInQuad"
-          >
+          <Parallax className="card-caracteristica" easing="easeInQuad">
             <div className="imagen-caracteristica">
               <img src={imageUrls.talk} />
             </div>
             <div>
               <h5>Buena comunicacion</h5>
               <p>
-              Mi habilidad para comunicarme con claridad y eficacia me permite establecer relaciones interpersonales efectivas y lograr objetivos de manera colaborativa.
+                Mi habilidad para comunicarme con claridad y eficacia me permite
+                establecer relaciones interpersonales efectivas y lograr
+                objetivos de manera colaborativa.
               </p>
             </div>
           </Parallax>
           <Parallax
-          className="card-caracteristica"
-          translateX={['60px', '0px']}
-          easing="easeInQuad"
-          speed={0.6}
+            className="card-caracteristica"
+            easing="easeInQuad"
+            speed={0.6}
           >
             <div className="imagen-caracteristica">
               <img src={imageUrls.proactivo} alt="" />

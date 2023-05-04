@@ -3,6 +3,7 @@ import './ContactStyles.css'
 import { ImLocation } from "react-icons/im";
 import { BsMailbox, BsPhone} from "react-icons/bs";
 import { Link } from "react-router-dom";
+import { MyComponent } from "./Map";
 
 export const ContactPage = () => {
   return (
@@ -45,8 +46,7 @@ export const ContactPage = () => {
             <Container className="contact-card-icon">
               <ImLocation/>
               <h5>¿donde encontrarme?</h5>
-            </Container>
-            <Container className="contact-card-text">
+              <MyComponent/>
             </Container>
           </Container>
         </Container>

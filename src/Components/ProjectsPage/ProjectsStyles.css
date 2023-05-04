@@ -9,7 +9,9 @@
     overflow: hidden;
     padding-top: 25px;
     max-width: 100vw;
+
 }
+
 .projects h1{
     font-size: 3rem;
     font-weight: 200;
@@ -27,11 +29,11 @@
 
 .projects .container-fluid .cohetes {
     width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    opacity: 100%;
     overflow: hidden;
     position: absolute;
     z-index: -99;
@@ -49,14 +51,14 @@
     rotate: 40deg;
 }
 .projects .container-fluid .cohetes  div:nth-child(2){
-    rotate: -40deg;
+    rotate: 30deg;
 }
 .projects .container-fluid .cohetes  div:nth-child(3){
-    rotate: 60deg;
+    rotate: -160deg;
 }
 
 .projects .container-fluid .cohetes  div:nth-child(4){
-    rotate: 100deg;
+    rotate: 160deg;
 }
 
 .projects .container-fluid .cohetes  div:nth-child(8){
@@ -107,13 +109,11 @@ backdrop-filter: blur(8px);
     width: 100%;
     height: 100%;
     border-radius: 4%;
-    opacity: 30%;
+    opacity: 60%;
+    border-radius: 4px;
 }
 
-.carrousel .card-carrousel .card-carrousel-img:hover{
-    filter: blur(0px);
-    opacity: 80%;
-}   
+
 .carrousel .card-carrousel .card-carrousel-img .container{
     display: flex;
     align-items: center;
@@ -129,7 +129,6 @@ backdrop-filter: blur(8px);
     object-fit: contain;
     position: relative;
     filter: blur(4px);
-
 }
 
 .card-carrousel .card-carrousel-text{
@@ -147,7 +146,7 @@ backdrop-filter: blur(8px);
 .card-carrousel .card-carrousel-text h4{
     font-size: 1.9rem;
     font-weight: 300;
-    color: var(--color-primary);
+    color: var(--color-fifth);
     margin: 0;
 }
 
@@ -164,8 +163,8 @@ backdrop-filter: blur(8px);
     height: 2rem;
     border-radius: 5%;
     border: none;
-    background-color: var(--color-primary);
-    color: var(--color-secondary);
+    background-color: var(--color-fifth);
+    color: var(--color-primary);
     font-size: .8rem;
     font-weight: 100;
     display: flex;

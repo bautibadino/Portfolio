@@ -35,13 +35,16 @@ export const ProjectsPage = () => {
       <img src={cohete} alt="cohete" className="cohete"/>
     )
   }
-
+  
   return (
     <section className="projects" id="projects">
       <h1>Projects</h1>
       <Container fluid>
         <Container className="cohetes">
-          <Parallax speed={28}>
+          <Parallax 
+          speed={28}
+          
+          >
           <RocketImage/>
           </Parallax>
           <Parallax speed={15}>

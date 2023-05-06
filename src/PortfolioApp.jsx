@@ -7,8 +7,8 @@ import { ContactPage } from "./Components/ContactPage/ContactPage";
 import { ProjectsPage } from "./Components/ProjectsPage/ProjectsPage";
 import { AboutPage } from "./Components/AboutPage/AboutPage";
 import { HomePage } from "./Components/HomePage/HomePage";
-import { Spinner } from "react-bootstrap";
-import { useContext, useEffect, useState } from "react";
+
+
 
 export const PortfolioApp = () => {
     return (

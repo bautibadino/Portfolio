@@ -7,6 +7,12 @@ import { Spinner } from 'react-bootstrap';
   // Crear el contexto
   export const ImageUrlsContext = createContext();
 
+  const loadingSpinner = () => {
+    return(
+      <div className="loading-spinner"></div>
+    )
+  }
+  
   export const Provider = ({ children }) => {
     // Use state to store the object of image URLs
     const [imageUrls, setImageUrls] = useState({});
@@ -48,12 +54,10 @@ import { Spinner } from 'react-bootstrap';
       imageUrls,
       loading
     }
-    console.log(loading);
+
     if(loading){
       return(
-        <div className="d-flex justify-content-center align-items-center vh-100">
-          <Spinner animation="border" variant="primary" />
-        </div>
+        <div className="loading-spinner"></div>
         )}
 
     return (

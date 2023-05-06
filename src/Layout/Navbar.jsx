@@ -1,48 +1,45 @@
 
-import { useEffect, useState } from 'react'
+
+import { Container } from 'react-bootstrap'
 import './LayoutStyles.css'
-import { Container, Nav, NavDropdown, NavLink } from 'react-bootstrap'
+import { BiMenuAltRight } from 'react-icons/bi'
 export const Navbar = () => {
-    const [size, setSize] = useState(0)
 
-    useEffect(() => {
-        setSize(window.innerWidth)
-        console.log(size);
-    }, [])
+    return(
+    <Container>
+        <nav className='navbar'>
+        <h2>Bautista Badino</h2>
+        <ul className='nav-menu'>
+            <li className='nav-item'>
+                <a href='#home' className='nav-link'>
+                    Home
+                </a>
+            </li>
 
-    return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <div>
-            <h3>
-            <NavLink to={"/Home"}>Bautista Badino</NavLink>
-            </h3>
-        </div>
-        <div className="container-fluid">
-            <ul>
-                <li>
-                    <NavLink to={"#Home"} className={({isActive}) => {
-                        return isActive ? "active" : ""
-                    }}>Inicio</NavLink>
-                </li>
-                <li>
-                    <NavLink to={"#SobreMi"} className={({isActive}) => {
-                        return isActive ? "active" : ""
-                    }}>Sobre mi</NavLink>
-                </li>
-                <li>
-                    <NavLink to={"#Proyectos"} className={({isActive}) => {
-                        return isActive ? "active" : ""
-                    }}>Proyectos</NavLink>
-                </li>
-                <li>
-                    <NavLink to={"#Contacto"} className={({isActive}) => {
-                        return isActive ? "active" : ""
-                    }}>Contacto</NavLink>
-                </li>
-            </ul>
-        </div>
-    </nav>
+            <li className='nav-item'>
+                <a href='#SobreMi' className='nav-link'>
+                    Sobre Mi
+                </a>
+            </li>
+            <li className='nav-item'>
+                <a href='#projects' className='nav-link'>
+                    Proyectos
+                </a>
+            </li>
+            <li className='nav-item'>
+                <a href='#contact' className='nav-link'>
+                    Contacto
+                </a>
+            </li>
+        </ul>
+        <button className='mobile-button'>
+        <BiMenuAltRight className=''/> 
+        </button>
+        </nav>
 
-    
-  )
-}
+    </Container>
+
+
+    )
+    }
+

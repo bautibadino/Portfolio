@@ -3,7 +3,8 @@ import './ContactStyles.css'
 import { ImLocation } from "react-icons/im";
 import { BsMailbox, BsPhone} from "react-icons/bs";
 import { Link } from "react-router-dom";
-import { MyComponent } from "./Map";
+import MapComponent from "./Map";
+
 
 export const ContactPage = () => {
   return (
@@ -46,7 +47,21 @@ export const ContactPage = () => {
             <Container className="contact-card-icon">
               <ImLocation/>
               <h5>¿donde encontrarme?</h5>
-              <MyComponent/>
+            </Container>
+            <Container className="mapa">
+              <MapComponent/>
+              <Container
+              className="formulario"
+              >
+                <h5>¿Tienes una pregunta o un proyecto en mente?</h5> 
+                <p>¡Contáctame hoy mismo!</p>
+                <form action="">
+                  <input className="form-nombre" type="text" placeholder="Nombre"/>
+                  <input className="form-email" type="text" placeholder="Email"/>
+                  <textarea className="form-mensaje" name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                  <button className="form-boton" type="submit">Enviar</button>
+                </form>
+              </Container>
             </Container>
           </Container>
         </Container>

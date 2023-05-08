@@ -19,9 +19,7 @@ export const AboutPage = () => {
   return (
     <Container fluid id="SobreMi" className="container-about">
       <div>
-        <Parallax 
-        opacity={[ 1.5, 0.1]}
-        translateX={[-35, 10]}>
+        <Parallax opacity={[1.5, 0.1]} translateX={[-35, 20]}>
           <div className="texto-about ">
             <h3>
               Hola, soy <strong>Bautista</strong>
@@ -78,11 +76,16 @@ export const AboutPage = () => {
             </ul>
           </div>
         </Parallax>
-        <Parallax 
-        opacity={[1.5, 0.1]}
-        translateX={[10, -35]} 
-        className="caracteristicas-about">
-          <Parallax easing="easeInQuad" className="card-caracteristica">
+        <Parallax
+          opacity={[1.8, 0.4]}
+          translateX={[10, -10]}
+          translateY={[10, -10]}
+          className="caracteristicas-about"
+        >
+          <Parallax 
+
+          easing="easeInQuad" 
+          className="card-caracteristica">
             <div className="imagen-caracteristica">
               <img src={imageUrls.idea} />
             </div>
@@ -95,7 +98,10 @@ export const AboutPage = () => {
               </p>
             </div>
           </Parallax>
-          <Parallax className="card-caracteristica" easing="easeInQuad">
+          <Parallax 
+
+          className="card-caracteristica" 
+          easing="easeInQuad">
             <div className="imagen-caracteristica">
               <img src={imageUrls.talk} />
             </div>
@@ -111,7 +117,6 @@ export const AboutPage = () => {
           <Parallax
             className="card-caracteristica"
             easing="easeInQuad"
-            speed={0.6}
           >
             <div className="imagen-caracteristica">
               <img src={imageUrls.proactivo} alt="" />

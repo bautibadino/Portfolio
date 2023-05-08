@@ -103,13 +103,12 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 70%;
     text-align: justify;
-    margin: 1rem 0;
-    padding:.5rem;
+    margin: .7rem 0rem;
     /* GLASS */
     background: rgba(33, 56, 45, 0.1);
-    border-radius: 16px;
+    border-radius: 5px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(2.9px);
     -webkit-backdrop-filter: blur(2.9px);
@@ -119,7 +118,7 @@
 
 .container-about div .caracteristicas-about .card-caracteristica h5{
     font-size: 1.4rem;
-    font-weight: 400;
+    font-weight: 200;
     letter-spacing: -1px;
     margin: 0;
     border-bottom: .5px solid var(--color-terciary);
@@ -128,13 +127,22 @@
 
 .container-about div .caracteristicas-about .card-caracteristica .imagen-caracteristica img{
  width: 100%;
- padding-left: 10px;
+ padding-left: 15px;
 }
 
 .container-about div .caracteristicas-about .card-caracteristica .imagen-caracteristica{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    width: 25%;
+    width: 30%;
     object-fit: contain;
+}
+
+@media screen and (max-width: 768px) {
+    .container-about.container-fluid div{
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        width: 100vw;
+    }
 }

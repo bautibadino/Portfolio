@@ -85,3 +85,48 @@
 .container-home .redes-home a :hover{
     color: var(--color-primary);
 }
+
+/* mediaqueries */
+
+@media screen and (max-width: 768px) {
+    .container-home .image-home img{
+        width: 40vw;
+    }
+    .container-home .text-home{
+        width: 80vw;
+    }
+    .container-home .text-home h1{
+        font-size: 2rem;
+        text-align: center;
+        white-space: nowrap;
+    }
+    .container-home .text-home h2{
+        font-size: 1.5rem;
+        text-align: center;
+        white-space: nowrap;
+        margin-bottom: 1rem;
+    }
+    .container-home .text-home p{
+        margin-block-start: 0;
+        margin-block-end: 0;
+        text-align: justify;
+        width: 100%;
+    }
+    .container-home .redes-home a{
+        width: 2rem;
+    }
+    .container-home .redes-home a svg {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+}
+
+.container-home .text-home p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: var(--color-quarter);
+    /* margin: 0; */
+    margin-block-start: 0;
+    margin-block-end: 0;
+    text-align: justify;

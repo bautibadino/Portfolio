@@ -1,7 +1,8 @@
 import { BrowserRouter } from "react-router-dom";
 import { Layout } from "./Layout/Layout";
 import "animate.css";
-import { ImageUrlsContext, Provider } from "./Context/Provider";
+import "./App.css";
+import { Provider } from "./Context/Provider";
 import { ParallaxProvider } from "react-scroll-parallax";
 import { ContactPage } from "./Components/ContactPage/ContactPage";
 import { ProjectsPage } from "./Components/ProjectsPage/ProjectsPage";

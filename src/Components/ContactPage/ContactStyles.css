@@ -2,12 +2,13 @@
     width: 100vw;
     display: flex;
     justify-content: center;
-    min-height: 90vh;
-    padding-top: 25px;
+    margin-top: 2rem;
+    font-family: 'Kanit', sans-serif;
 }
 
 .contact-page .container-fluid {
     width: 80%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,7 +19,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 50px;
+
 }
 
 .contact-page .container-fluid .contact-text h3 {
@@ -46,20 +47,22 @@
     justify-items: center;
 }
 
-.contact-page .container-fluid .contact-cards .container-superior{
+.contact-page .container-fluid .contact-cards .container-superior {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
-
+    height: 20%;
 }
-.contact-page .container-fluid .contact-cards .container-superior a{
+
+.contact-page .container-fluid .contact-cards .container-superior a {
     text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.contact-page .container-fluid .contact-cards .container-superior a .contact-card{
+
+.contact-page .container-fluid .contact-cards .container-superior a .contact-card {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -70,7 +73,7 @@
     width: 100%;
 }
 
-.contact-page .container-fluid .contact-cards .container-superior a .contact-card:hover{
+.contact-page .container-fluid .contact-cards .container-superior a .contact-card:hover {
     background-color: #6d9d8653;
 }
 
@@ -83,14 +86,15 @@
     height: 4rem;
     border-radius: 50%;
 }
-.contact-page .container-fluid .contact-cards .container-superior a .contact-card .contact-card-icon svg{
-    color: var( --color-primary);
+
+.contact-page .container-fluid .contact-cards .container-superior a .contact-card .contact-card-icon svg {
+    color: var(--color-primary);
     width: 2rem;
     height: 2rem;
 }
 
 
-.contact-page .container-fluid .contact-cards .container-superior a .contact-card .contact-card-text{
+.contact-page .container-fluid .contact-cards .container-superior a .contact-card .contact-card-text {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -98,73 +102,154 @@
     margin-left: 10px;
 }
 
-.contact-page .container-fluid .contact-cards .container-superior a .contact-card .contact-card-text h5{
+.contact-page .container-fluid .contact-cards .container-superior a .contact-card .contact-card-text h5 {
     font-size: 1.2rem;
     font-weight: 300;
     margin: 0;
     color: var(--color-quarter);
 }
 
-.contact-page .container-fluid .contact-cards .container-superior a .contact-card .contact-card-text a{
+.contact-page .container-fluid .contact-cards .container-superior a .contact-card .contact-card-text a {
     font-size: 1rem;
     font-weight: 100;
     margin: 0;
     color: var(--color-fifth);
 }
 
-.contact-page .container-fluid .contact-cards .container-inferior{
+.contact-page .container-fluid .contact-cards .container-inferior.container {
     width: 100%;
-    height: 100%;
+
     display: flex;
     align-items: center;
     justify-content: space-around;
-    flex-direction: column;
+    flex-direction: row;
 }
-.contact-page .container-fluid .contact-cards .container-inferior .contact-card{
-    width: 80vw;
-    min-height: 55vh;
+
+
+/* .contact-page .container-fluid .contact-cards .container-inferior.container div{
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+} */
 
-} 
+.contact-page .container-fluid .contact-cards .container-inferior.container {
 
-.contact-page .container-fluid .contact-cards .container-inferior .contact-card-icon{
+    width: 100%;
+    font-weight: 300;
+    margin-top: 1rem;
+    color: var(--color-primary);
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
-    height: 20%;
-}
-.contact-page .container-fluid .contact-cards .container-inferior h5{
-    font-size: 1.2rem;
-    font-weight: 300;
-    margin: 0;
-    width: 100%;
-    color: var(--color-primary);
-}
-
-.contact-page .container-fluid .contact-cards .container-inferior .contact-card-icon svg{ 
-    color: var(--color-primary);
-    width: 1.4rem;
-    height: 1.4rem;
-    padding-right: 5px;
-}
-
-.mapa-container{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
     justify-content: space-around;
 }
 
-/* .form-container{
+.contact-page .container-fluid .contact-cards .container-inferior.container .contenedor-mapa.container-fluid {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.contact-page .container-fluid .contact-cards .container-inferior.container .contenedor-mapa.container-fluid .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.contact-page .container-fluid .contact-cards .container-inferior.container .contenedor-mapa.container-fluid .container .map {
+
+    height: 60vh;
+    width: 100%;
+    border-radius: 5%;
+
+}
+
+.contact-page .container-fluid .contact-cards .container-inferior.container .contenedor-form.container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: var(--color-primary);
-} */
+    margin-top: 5rem;
+    width: 100%;
+    height: 100%;
+
+}
+
+.contact-page .container-fluid .contact-cards .container-inferior.container .contenedor-form.container form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-page .container-fluid .contact-cards .container-inferior.container .contenedor-form.container form input:nth-child(1) {
+    border-top: 1px solid var(--color-terciary);
+}
+
+.contact-page .container-fluid .contact-cards .container-inferior.container .contenedor-form.container form input,
+textarea {
+    border-radius: 3px;
+    width: 90%;
+    height: 2rem;
+    font-size: .8rem;
+    font-weight: 300;
+    margin: 1rem 1rem 0 0;
+    padding: 1rem;
+    border: none;
+    border-bottom: .5px solid var(--color-quarter);
+}
+
+.contact-page .container-fluid .contact-cards .container-inferior.container .contenedor-form.container form textarea {
+    height: 5rem;
+    font-size: .8rem;
+    font-weight: 300;
+    background-color: var(--color-secondary);
+    margin-bottom: 1rem;
+}
+
+.contact-page .container-fluid .contact-cards .container-inferior.container .contenedor-form.container form button {
+    background-color: var(--color-secondary);
+    border: none;
+    border-radius: 3px;
+    height: 2.2rem;
+    width: 6.5rem;
+    font-size: .9rem;
+    color: var(--color-quarter);
+    border: .5px solid var(--color-primary);
+}
+
+.contact-page .container-fluid .contact-cards .container-inferior.container .contenedor-form.container form button:active {
+    background-color: var(--color-terciary);
+    border: none;
+    border-radius: 3px;
+    height: 2.2rem;
+    width: 6.5rem;
+    font-size: .9rem;
+    color: var(--color-secondary);
+}
+
+@media screen and (max-width: 768px) {
+
+    .contact-page .container-fluid .contact-cards .container-superior {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-page .container-fluid .contact-cards .container-superior a .contact-card{
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 1rem;
+    }
+    .contact-page .container-fluid .contact-cards .container-inferior.container{
+        flex-direction: column-reverse;
+        
+    }
+
+}

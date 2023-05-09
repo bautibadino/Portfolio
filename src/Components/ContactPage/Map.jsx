@@ -1,7 +1,13 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { GoogleMap, InfoWindow, LoadScript, Marker } from "@react-google-maps/api";
 
 const MapComponent = () => {
+    const [widthMap, setWidthMap] = useState();
+    
+    useEffect(() => {
+        setWidthMap(window.innerWidth)
+    }, [])
+    
     const initialMarkers = [
         {
             position: {
@@ -16,7 +22,7 @@ const MapComponent = () => {
                 lat: 28.625293,
                 lng: 79.817926
             },
-            label: { color: "white", text: "P2" },
+            label: { color: "red", text: "P2" },
             draggable: false
         },
         {
@@ -24,7 +30,7 @@ const MapComponent = () => {
                 lat: 28.625182,
                 lng: 79.81464
             },
-            label: { color: "white", text: "P3" },
+            label: { color: "red", text: "P3" },
             draggable: true
         },
     ];
@@ -32,9 +38,12 @@ const MapComponent = () => {
     const [activeInfoWindow, setActiveInfoWindow] = useState("");
     const [markers, setMarkers] = useState(initialMarkers);
 
+
+        
+
     const containerStyle = {
-        width: "50%",
-        height: "100%",
+        width: '50vw',
+        height: "65vh",
     }
 
     const center = {
@@ -61,8 +70,9 @@ const MapComponent = () => {
             <GoogleMap 
                 mapContainerStyle={containerStyle} 
                 center={center} 
-                zoom={20}
+                zoom={15}
                 onClick={mapClicked}
+                
             >
                 {markers.map((marker, index) => (
                     <Marker 

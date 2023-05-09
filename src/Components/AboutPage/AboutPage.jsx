@@ -79,7 +79,7 @@ export const AboutPage = () => {
         <Parallax
           opacity={[1.8, 0.4]}
           translateX={[10, -10]}
-          translateY={[10, -10]}
+          translateY={[15, -10]}
           className="caracteristicas-about"
         >
           <Parallax 

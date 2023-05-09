@@ -4,12 +4,24 @@ import { ImLocation } from "react-icons/im";
 import { BsMailbox, BsPhone } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import MapComponent from "./Map";
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 export const ContactPage = () => {
-
-  const [nameFocused, setNameFocused] = useState(false);
-
+  const formRef = useRef();
+  const [datos, setDatos] = useState({});
+  const handleChange = (e) => {
+    e.preventDefault();
+    setDatos({
+      ...datos,
+      [e.target.name]: e.target.value,
+    });
+  };
+  
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    formRef.current.reset();
+    
+  };
 
   return (
     <section className="contact-page">
@@ -55,21 +67,35 @@ export const ContactPage = () => {
 
           <Container className="container-inferior">
             <Container className="contenedor-form">
-              <form action="">
+              <form ref={formRef} onSubmit={handleSubmit} action="">
                 <input         
-                onFocus={(e) => setNameFocused(true)}
-                onBlur={(e) => setNameFocused(false)}
-                name="text" 
+                onChange={handleChange}
+                name="nombre" 
                 type="text" 
-                placeholder="Nombre" />
-                <input name="text" type="text" placeholder="Apellido" />
-                <input name="text" type="email" placeholder="Email" />
+                placeholder="Nombre"
+                defaultValue={datos.nombre}
+                />
+                <input 
+                onChange={handleChange}
+                name="apellido" 
+                type="text" 
+                placeholder="Apellido"
+                defaultValue={datos.apellido}/>
+                <input 
+                onChange={handleChange}
+                name="email" 
+                type="email" 
+                placeholder="Email" 
+                defaultValue={datos.email}
+                />
                 <textarea
+                  onChange={handleChange}
                   name="mensaje"
                   id="mensaje"
                   placeholder="Mensaje"
+                  defaultValue={datos.mensaje}
                 ></textarea>
-                <button type="submit">Enviar</button>
+                <button type="submit" >Enviar</button>
               </form>
             </Container>
 

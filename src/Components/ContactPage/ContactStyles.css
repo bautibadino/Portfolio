@@ -150,6 +150,7 @@
     width: 100%;
     height: 100%;
     display: flex;
+    margin-top: 3rem;
     flex-direction: column;
     align-items: center;
     justify-content: start;
@@ -236,11 +237,14 @@ textarea {
 }
 
 @media screen and (max-width: 768px) {
-
+    .contact-page .container-fluid .contact-cards {
+        width: auto;
+    }
     .contact-page .container-fluid .contact-cards .container-superior {
         width: 100%;
         display: flex;
         flex-direction: column;
+        margin-bottom: 5rem;
     }
     .contact-page .container-fluid .contact-cards .container-superior a .contact-card{
         display: flex;
@@ -249,7 +253,7 @@ textarea {
     }
     .contact-page .container-fluid .contact-cards .container-inferior.container{
         flex-direction: column-reverse;
-        
     }
+
 
 }

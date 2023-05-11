@@ -5,23 +5,10 @@ import { BsMailbox, BsPhone } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import MapComponent from "./Map";
 import { useRef, useState } from "react";
+import { Form } from "./Form";
 
 export const ContactPage = () => {
-  const formRef = useRef();
-  const [datos, setDatos] = useState({});
-  const handleChange = (e) => {
-    e.preventDefault();
-    setDatos({
-      ...datos,
-      [e.target.name]: e.target.value,
-    });
-  };
-  
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    formRef.current.reset();
-    
-  };
+
 
   return (
     <section className="contact-page">
@@ -67,36 +54,7 @@ export const ContactPage = () => {
 
           <Container className="container-inferior">
             <Container className="contenedor-form">
-              <form ref={formRef} onSubmit={handleSubmit} action="">
-                <input         
-                onChange={handleChange}
-                name="nombre" 
-                type="text" 
-                placeholder="Nombre"
-                defaultValue={datos.nombre}
-                />
-                <input 
-                onChange={handleChange}
-                name="apellido" 
-                type="text" 
-                placeholder="Apellido"
-                defaultValue={datos.apellido}/>
-                <input 
-                onChange={handleChange}
-                name="email" 
-                type="email" 
-                placeholder="Email" 
-                defaultValue={datos.email}
-                />
-                <textarea
-                  onChange={handleChange}
-                  name="mensaje"
-                  id="mensaje"
-                  placeholder="Mensaje"
-                  defaultValue={datos.mensaje}
-                ></textarea>
-                <button type="submit" >Enviar</button>
-              </form>
+              <Form/>
             </Container>
 
             <Container fluid className="contenedor-mapa">

@@ -236,6 +236,22 @@ textarea {
     color: var(--color-secondary);
 }
 
+.sucess{
+    margin: 2rem 0;
+    padding: 1rem;
+    border: .5px solid var(--color-terciary);
+    color: var(--color-secondary);
+    background-color: var(--color-primary);
+    border-radius: 3px;
+}   
+.error{
+    margin: 2rem 0;
+    padding: 1rem;
+    color: #ffffff;
+    background-color: rgba(255, 0, 0, 0.495);
+    border-radius: 3px;
+}
+
 @media screen and (max-width: 768px) {
     .contact-page .container-fluid .contact-cards {
         width: auto;

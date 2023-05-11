@@ -139,7 +139,7 @@ backdrop-filter: blur(8px);
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 100%;
+    width: 60vw;
 }
 
 /* textos */
@@ -151,11 +151,13 @@ backdrop-filter: blur(8px);
 }
 
 .card-carrousel .card-carrousel-text p{
+    margin-bottom: 2rem;
     font-size: 1.2rem;
     font-weight: 300;
     color: var(--color-secondary);
     width: 80%;
     text-align: center;
+    white-space: pre-wrap;
 }
 
 .card-carrousel .card-carrousel-text button{
@@ -216,3 +218,10 @@ backdrop-filter: blur(8px);
 /* CARROUSEL */
 /* CARROUSEL */
 /* CARROUSEL */
+
+@media screen and (max-width: 768px)  {
+    .boton-der, .boton-izq{
+        width: 3rem;
+        height: 2rem;
+    }
+}

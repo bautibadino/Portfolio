@@ -2,19 +2,17 @@ import { createContext, useEffect, useState } from "react";
 import { getDownloadURL, ref } from "firebase/storage";
 import { storage } from "../Components/Firebase/FirebaseConfig";
 import "./ContextStyles.css";
-import { Container, Spinner } from "react-bootstrap";
+
 import { LoadingSpinner } from "./LoadingSpinner";
 
 // Crear el contexto
 export const ImageUrlsContext = createContext();
 
 export const Provider = ({ children }) => {
-  // Use state to store the object of image URLs
   const [imageUrls, setImageUrls] = useState({});
   const [loading, setLoading] = useState(true);
-  // Define an async function to get the download URLs of 5 images
+  //funcion asincronica para traer la info de la db
   async function getImageUrls() {
-    // Create an object of references to the image files
     const references = {
       perfil: ref(
         storage,
@@ -27,24 +25,19 @@ export const Provider = ({ children }) => {
       idea: ref(storage, "Imagenes/idea.svg"),
     };
 
-    // Create an empty object to store the URLs
-    const urls = {};
-
-    // Loop over the keys of the references object and get the download URL for each one
+    const urls = {}
+    //iteracion sobre las keys y esperamos las urls de descargas de cada una
     for (let key in references) {
       const url = await getDownloadURL(references[key]);
-      // Assign the URL to the same key in the urls object
+      // Asignando url a cada llave que coincide con las referencias de arriba
       urls[key] = url;
     }
-
-    // Set the state with the object of URLs
+    //ESTADO CON URLS
     setImageUrls(urls);
-    setTimeout(() => {
-      setLoading(false);
-    }, 700);
+    setLoading(false)
   }
 
-  // Use useEffect to call the function when the component mounts
+  //useEffect para llamar la funcion de obtener urls
   useEffect(() => {
     getImageUrls();
   }, []);
@@ -58,9 +51,8 @@ export const Provider = ({ children }) => {
   if (loading) {
     return (
       <>
-        <LoadingSpinner/>
+        <LoadingSpinner />
       </>
-
     );
   }
 

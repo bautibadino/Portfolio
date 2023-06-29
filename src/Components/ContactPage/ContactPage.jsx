@@ -14,11 +14,12 @@ export const ContactPage = () => {
       <Container fluid>
         <Container className="contact-text">
           <h3>Contacto</h3>
+
         </Container>
         <Container className="contact-cards">
           <Container className="container-superior">
             <Link
-              to="wa.link/4m01ol"
+              to="https://wa.link/4m01ol"
               className="contact-card"
               target="_blank"
             >
@@ -28,7 +29,7 @@ export const ContactPage = () => {
                 </Container>
                 <Container className="contact-card-text">
                   <h5>Teléfono</h5>
-                  <a href="tel:+393463619919">+393463619919</a>
+                  <span>+393463619919</span>
                 </Container>
               </Container>
             </Link>
@@ -39,9 +40,9 @@ export const ContactPage = () => {
                 </Container>
                 <Container className="contact-card-text">
                   <h5>Correo</h5>
-                  <a href="mailto: bautistabadino@gmail.com">
+                  <span>
                     bautistabadino@gmail.com
-                  </a>
+                  </span>
                 </Container>
               </Container>
             </Link>

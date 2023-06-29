@@ -8,6 +8,7 @@ import {
   FaGithub,
   FaNode,
 } from "react-icons/fa";
+import { SiMongodb } from "react-icons/si";
 import { IoLogoFirebase, IoLogoJavascript } from "react-icons/io5";
 import { Parallax } from "react-scroll-parallax";
 import { useContext } from "react";
@@ -71,6 +72,11 @@ export const AboutPage = () => {
               <li>
                 <p>
                   Firebase <IoLogoFirebase />{" "}
+                </p>
+              </li>
+              <li>
+                <p>
+                  MongoDB<SiMongodb/>{" "}
                 </p>
               </li>
             </ul>

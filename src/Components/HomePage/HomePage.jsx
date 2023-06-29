@@ -23,7 +23,9 @@ export const HomePage = () => {
           <p>¡Hola! Soy Bautista, un desarrollador front-end apasionado y en busca de oportunidades para crecer en el mundo digital. Siempre estoy en constante aprendizaje y estoy listo para enfrentar nuevos desafíos en mi carrera como desarrollador. ¡Bienvenidos a mi portfolio!</p>
         </Row>
         <Row className="redes-home">
-          <Link to={"https://www.linkedin.com/"}>
+          <Link 
+          to="https://www.linkedin.com/in/bautista-badino"
+          target="_blank">
             <AiFillLinkedin className="redes-icons"/>
           </Link>
           <Link to={"https://wwww.github.com/"}>

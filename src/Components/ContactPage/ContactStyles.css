@@ -72,7 +72,9 @@
     border-radius: 3px;
     width: 100%;
 }
-
+.contact-card-text.container span{
+    color: var(--color-primary);
+}
 .contact-page .container-fluid .contact-cards .container-superior a .contact-card:hover {
     background-color: #6d9d8653;
 }

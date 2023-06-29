@@ -4,7 +4,6 @@ import { ImLocation } from "react-icons/im";
 import { BsMailbox, BsPhone } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import MapComponent from "./Map";
-import { useRef, useState } from "react";
 import { Form } from "./Form";
 
 export const ContactPage = () => {
@@ -14,16 +13,12 @@ export const ContactPage = () => {
     <section className="contact-page">
       <Container fluid>
         <Container className="contact-text">
-          <h3>Contact Us</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
-            repudiandae!
-          </p>
+          <h3>Contacto</h3>
         </Container>
         <Container className="contact-cards">
           <Container className="container-superior">
             <Link
-              to="https://api.whatsapp.com/send?phone=5493468566527&text=Hola%20Bautista%20Badino%20me%20gustaria%20saber%20mas%20sobre%20sus%20servicios"
+              to="wa.link/4m01ol"
               className="contact-card"
               target="_blank"
             >
@@ -33,7 +28,7 @@ export const ContactPage = () => {
                 </Container>
                 <Container className="contact-card-text">
                   <h5>Teléfono</h5>
-                  <a href="tel:+549 3468566527">+549 3468-566527</a>
+                  <a href="tel:+393463619919">+393463619919</a>
                 </Container>
               </Container>
             </Link>

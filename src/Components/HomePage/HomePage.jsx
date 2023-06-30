@@ -2,16 +2,19 @@ import { Link } from "react-router-dom"
 import {AiFillGithub, AiFillLinkedin} from "react-icons/ai"
 import "./HomeStyles.css"
 import { Col, Container, Row } from "react-bootstrap"
-import { useContext } from "react"
+import { useContext, useState } from "react"
 import { ImageUrlsContext } from "../../Context/Provider"
+import { LoadingSpinner } from "../../Context/LoadingSpinner"
 
 
 
 
 
 export const HomePage = () => {
+
   const {imageUrls} = useContext(ImageUrlsContext);
-  return (  
+  
+  return (    
     <Container fluid className={'animate__animated animate__zoomInDown'}>
       <Col className="container-home">
         <Row className="image-home">
@@ -35,5 +38,6 @@ export const HomePage = () => {
     </Col>
     </Container>
 
-  )
+)
 }
+

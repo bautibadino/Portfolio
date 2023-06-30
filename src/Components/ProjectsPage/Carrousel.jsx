@@ -12,8 +12,8 @@ export default function Carrousel  (){
     const slides = [
         {
             img: imageUrls.fondo,
-            title: 'NOMBRE PROY1',
-            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, autem!'
+            title: 'Proyecto tienda',
+            text: 'Proyecto web utilizando React y Firebase, brindando una experiencia intuitiva y funcional para los usuarios con carrito y checkout.'
         },
         {
             img: imageUrls.fondo,

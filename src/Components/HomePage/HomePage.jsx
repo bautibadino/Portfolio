@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import {AiFillGithub, AiFillLinkedin} from "react-icons/ai"
+import {AiFillGithub, AiFillLinkedin, AiOutlineDownload} from "react-icons/ai"
 import "./HomeStyles.css"
 import { Col, Container, Row } from "react-bootstrap"
 import { useContext, useState } from "react"
@@ -33,6 +33,10 @@ export const HomePage = () => {
           </Link>
           <Link to={"https://wwww.github.com/"}>
             <AiFillGithub className="redes-icons"/>
+          </Link>
+          <Link to={"https://firebasestorage.googleapis.com/v0/b/my-portfolio-7b4ec.appspot.com/o/cv%2FBAUTISTA%20BADINO.pdf?alt=media&token=f0c9bcdd-36f5-4b46-af29-a7fd79cea1a3"}className="curriculum">
+          <AiOutlineDownload className="redes-icons"/>
+          Curriculum
           </Link>
         </Row>
     </Col>

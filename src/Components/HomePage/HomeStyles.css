@@ -130,3 +130,17 @@
     margin-block-start: 0;
     margin-block-end: 0;
     text-align: justify;
+}
+
+.curriculum{
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.curriculum a{
+    
+}

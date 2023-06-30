@@ -3,27 +3,32 @@ import Carousel from "nuka-carousel"
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 import { useContext } from 'react';
 import { ImageUrlsContext } from '../../Context/Provider';
+import { useNavigate } from 'react-router-dom';
 
 export default function Carrousel  (){
 
     const {imageUrls} = useContext(ImageUrlsContext);
 
-
+    
+    const routeChange = (url) =>{
+        window.open(url, '_blank');
+      }
+  
     const slides = [
         {
-            img: imageUrls.fondo,
-            title: 'Proyecto tienda',
-            text: 'Proyecto web utilizando React y Firebase, brindando una experiencia intuitiva y funcional para los usuarios con carrito y checkout.'
+            img: imageUrls.shopApple,
+            title: 'Proyecto tienda Apple',
+            text: 'Proyecto web utilizando React y Firebase, brindando una experiencia intuitiva y funcional para los usuarios con carrito y checkout.',
+            linkDeploy: 'https://monumental-starburst-d241b0.netlify.app/',
+            linkGit: 'https://github.com/bautibadino/ProyTienda',
+
         },
         {
-            img: imageUrls.fondo,
-            title: 'NOMBRE PROY2',
-            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, autem!'
-        },
-        {
-            img: imageUrls.fondo,
-            title: 'NOMBRE PROY3',
-            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, autem!'
+            img: imageUrls.cotizador,
+            title: 'Cotizador de seguros',
+            text: 'Aplicacion web para cotizar seguros hecha con JavaScript plano, sin frameworks, para mejora de logica',
+            linkDeploy: 'https://dapper-liger-c0d79d.netlify.app/',
+            linkGit: 'https://github.com/bautibadino/CursoJs',
         },
     ]
     console.log();
@@ -43,7 +48,7 @@ export default function Carrousel  (){
     <Carousel defaultControlsConfig={props.defaultControlsConfig} props={props} className="carrousel">
         {
         slides.map((slide, index) => {
-            const {title, img, text} = slide;
+            const {title, img, text, linkDeploy, linkGit} = slide;
         return(
         <Container className='card-carrousel' key={index} >
             <Container className='card-carrousel-text'>
@@ -51,7 +56,8 @@ export default function Carrousel  (){
                 <p>
                     {text}
                 </p>
-                <Button variant="outline-light">ver mas<AiOutlineArrowRight className='flecha-ver-mas'/></Button>
+                <Button onClick={() => routeChange(linkDeploy)} variant="outline-light">Ver deploy<AiOutlineArrowRight className='flecha-ver-mas'/></Button>
+                <Button onClick={() => routeChange(linkGit)} variant="outline-light">Ver codigo<AiOutlineArrowRight className='flecha-ver-mas'/></Button>
             </Container>
             <Container className='card-carrousel-img'>
             <img src={img}/>

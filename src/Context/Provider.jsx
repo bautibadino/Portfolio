@@ -18,6 +18,8 @@ export const Provider = ({ children }) => {
         storage,
         "Imagenes/60AC3452-9745-4202-93CA-744E75AB598F_1_105_c.jpg"
       ),
+      shopApple: ref(storage, 'Imagenes/appleShop.png'),
+      cotizador: ref(storage, 'Imagenes/cotizador.png'),
       cohete: ref(storage, "Imagenes/Cohete.svg"),
       proactivo: ref(storage, "Imagenes/Online report_Flatline.svg"),
       talk: ref(storage, "Imagenes/talk.svg"),

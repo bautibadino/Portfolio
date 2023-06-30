@@ -39,6 +39,9 @@ export const Provider = ({ children }) => {
   //useEffect para llamar la funcion de obtener urls
   useEffect(() => {
     getImageUrls();
+    setTimeout(() => {
+      setLoading(false)
+    }, 3000);
   }, []);
   // Definir el valor del contexto como el objeto de URLs de imágenes
   const valuesProvider = {

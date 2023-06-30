@@ -1,3 +1,2 @@
-const apiPass = "AIzaSyAcMQD0scR71mNauXRjw7KHHWlMHYYIbqw"
+export const apiPass = "AIzaSyAcMQD0scR71mNauXRjw7KHHWlMHYYIbqw"
 
-export default apiPass

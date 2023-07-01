@@ -34,7 +34,7 @@ export const HomePage = () => {
           <Link to={"https://wwww.github.com/"}>
             <AiFillGithub className="redes-icons"/>
           </Link>
-          <Link to={"https://firebasestorage.googleapis.com/v0/b/my-portfolio-7b4ec.appspot.com/o/cv%2FBAUTISTA%20BADINO.pdf?alt=media&token=f0c9bcdd-36f5-4b46-af29-a7fd79cea1a3"}className="curriculum">
+          <Link to={"https://firebasestorage.googleapis.com/v0/b/my-portfolio-7b4ec.appspot.com/o/cv%2FBAUTISTA%20BADINO.pdf?alt=media&token=76fa61b0-96bc-4203-8c8a-6875ff42e8de"}className="curriculum">
           <AiOutlineDownload className="redes-icons"/>
           Curriculum
           </Link>

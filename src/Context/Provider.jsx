@@ -18,12 +18,12 @@ export const Provider = ({ children }) => {
         storage,
         "Imagenes/60AC3452-9745-4202-93CA-744E75AB598F_1_105_c.jpg"
       ),
+      backendShop: ref(storage, 'Imagenes/backendShop.png'),
       shopApple: ref(storage, 'Imagenes/appleShop.png'),
       cotizador: ref(storage, 'Imagenes/cotizador.png'),
       cohete: ref(storage, "Imagenes/Cohete.svg"),
       proactivo: ref(storage, "Imagenes/Online report_Flatline.svg"),
       talk: ref(storage, "Imagenes/talk.svg"),
-      fondo: ref(storage, "Imagenes/pexels-pok-rie-130879.jpg"),
       idea: ref(storage, "Imagenes/idea.svg"),
     };
 

@@ -3,7 +3,6 @@ import Carousel from "nuka-carousel"
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 import { useContext } from 'react';
 import { ImageUrlsContext } from '../../Context/Provider';
-import { useNavigate } from 'react-router-dom';
 
 export default function Carrousel  (){
 
@@ -29,7 +28,13 @@ export default function Carrousel  (){
             text: 'Aplicacion web para cotizar seguros hecha con JavaScript plano, sin frameworks, para mejora de logica',
             linkDeploy: 'https://dapper-liger-c0d79d.netlify.app/',
             linkGit: 'https://github.com/bautibadino/CursoJs',
-        },
+        },        {
+            img: imageUrls.backendShop,
+            title: 'Backend de web shop',
+            text: 'Backend completo de shop online con node y express, api creada para consumir desde un front',
+            linkDeploy: 'https://github.com/bautibadino/TiendaBack',
+            linkGit: 'https://github.com/bautibadino/TiendaBack',
+        }, 
     ]
     console.log();
     const props = {
